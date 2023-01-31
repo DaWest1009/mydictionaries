@@ -8,6 +8,10 @@ phonebook = {'Chris': '555−1111',
 # values can be any object (string, int, float, list, tuple, dict)
 # a list needs an index value a dictionary needs a key value
 '''
+print()
+print('*****  start section 1 - print dictionary ********')
+print()
+
 mydictionary = dict(m=8, n=9) #a way to create a dictionary
 print(mydictionary)
 
@@ -17,18 +21,9 @@ print()
 
 
 print()
-
-
-print()
-print('*****  start section 1 - print dictionary ********')
-print()
-
-
 print()
 print('*****  end section 1 ********')
 print()
-
-
 
 
 
