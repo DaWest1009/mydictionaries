@@ -7,7 +7,7 @@ phonebook = {'Chris': '555−1111',
              'Joanne': '555−3333'}  # dictionaires have scriggly brackets, key is always on left, value is always on right
 # values can be any object (string, int, float, list, tuple, dict)
 # a list needs an index value a dictionary needs a key value
-'''
+'''''''''''
 print()
 print('*****  start section 1 - print dictionary ********')
 print()
@@ -25,7 +25,7 @@ print()
 print('*****  end section 1 ********')
 print()
 
-
+'''''''
 
 print()
 print('*****  start section 2 - search dictionary ********')
@@ -34,9 +34,9 @@ print()
 name = 'Chris'
 
 if name in phonebook:
-    print(phonebook[name]))
+    print(phonebook[name])
 else:
-    print([name]'is not in the phonebook')
+    print([name],'is not in the phonebook')
 
 
 print(phonebook['Chris']) #prints Chris's phone number (a key error means there is no match) (make sure case is correct)
@@ -48,7 +48,7 @@ print('*****  end section 2 ********')
 print()
 
 
-
+''''''''''''''''''
 
 print()
 print('*****  start section 3 - edit/append dictionary ********')
@@ -66,7 +66,7 @@ print()
 print('*****  end section 3 ********')
 print()
 
-
+'''''''
 
 print()
 print('*****  start section 4 - delete/remove from dictionary ********')
@@ -81,8 +81,7 @@ print()
 print('*****  end section 4 ********')
 print()
 
-
-
+'''''''''''''
 
 print()
 print('*****  start section 5 - iterate through keys, values, items ********')
@@ -106,7 +105,7 @@ print()
 
 
 
-
+''''''''''''
 
 print()
 print('*****  start section 6 - using get and clear ********')
@@ -161,8 +160,7 @@ print()
 print('*****  end section 8 ********')
 print()
 
-'''''''''''
-
+''''''
 print()
 print('*****  start section 9 - using random and converting to list ********')
 print()
@@ -179,3 +177,4 @@ print(phonebook[random.choice(list(phonebook))])
 print()
 print('*****  end section 9 ********')
 print()
+'''
