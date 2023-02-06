@@ -25,7 +25,7 @@ print()
 print('*****  end section 1 ********')
 print()
 
-'''''''
+''''''''''''''''''''''''
 
 print()
 print('*****  start section 2 - search dictionary ********')
@@ -48,7 +48,7 @@ print('*****  end section 2 ********')
 print()
 
 
-''''''''''''''''''
+'''''''''''''''''''
 
 print()
 print('*****  start section 3 - edit/append dictionary ********')
@@ -66,7 +66,7 @@ print()
 print('*****  end section 3 ********')
 print()
 
-'''''''
+'''''''''''''''''''''''''
 
 print()
 print('*****  start section 4 - delete/remove from dictionary ********')
@@ -81,7 +81,7 @@ print()
 print('*****  end section 4 ********')
 print()
 
-'''''''''''''
+''''''''''''''''''''''''''''''
 
 print()
 print('*****  start section 5 - iterate through keys, values, items ********')
@@ -105,7 +105,7 @@ print()
 
 
 
-''''''''''''
+'''''''''''''''''''''''''''''''
 
 print()
 print('*****  start section 6 - using get and clear ********')
@@ -160,7 +160,7 @@ print()
 print('*****  end section 8 ********')
 print()
 
-''''''
+''''''''''''''''''''''''''
 print()
 print('*****  start section 9 - using random and converting to list ********')
 print()
@@ -177,4 +177,4 @@ print(phonebook[random.choice(list(phonebook))])
 print()
 print('*****  end section 9 ********')
 print()
-'''
+'''''''''''''''''''''
