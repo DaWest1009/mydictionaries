@@ -26,32 +26,34 @@ import json
 
 infile = open('eq_data.json', 'r')
 eqData = json.load(infile)
-earthquakes = eqData['features']
 
 #Part 1 print out the number of earthquakes
-print()
-print(f"Number of earthquakes: {len(earthquakes)}")
-print('\n')
+
+print('\n', "Number of earthquakes: ", len(eqData['features']) ,'\n', sep='')
 
 #Part 2 iterate through the dictionary and extract data, and save it in a new dictionary
-eq_dict =  {"Earthquakes": []}
-   
+eq_dict =  {}
+count = 1
 
-for eq in earthquakes:
-   location = eq['properties']['place']
-   magnitude = eq['properties']['mag']
-   latitude = eq['geometry']['coordinates'][1]
-   longitude = eq['geometry']['coordinates'][0]
-   if magnitude > 6:
-      eq_list = [location, magnitude, longitude, latitude]
-      eq_dict["Earthquakes"].append(eq_list)
+for eq in eqData['features']:
+   if eq['properties']['mag'] > 6:
+      eq_dict["Eq" + str(count)] = {}
+      eq_dict["Eq" + str(count)]["Loc"] = eq['properties']['place']
+      eq_dict["Eq" + str(count)]["Mag"] = eq['properties']['mag']
+      eq_dict["Eq" + str(count)]["Lon"] = eq['geometry']['coordinates'][0]
+      eq_dict["Eq" + str(count)]["Lat"] = eq['geometry']['coordinates'][1]
+      count += 1
+
+#print out new dictionary
+print("New Dictionary: ", '\n', eq_dict, '\n')
 
 #Part 3 using the eq_dict dictionary, print out the information
-for record in eq_dict["Earthquakes"]:
-   print("Location: ", record[0], '\n', 
-   "Magnitude: ", record[1], '\n', 
-   "Longitude: ", record[2], '\n',
-   "Latitude: ", record[3], '\n', sep='')
+for keys in eq_dict:
+   print("Location: ", eq_dict[keys]["Loc"], "\nMagnitude: ", eq_dict[keys]["Mag"], 
+   "\nLongitude: ", eq_dict[keys]["Lon"], "\nLatitude: ", eq_dict[keys]["Lat"], sep='')
+
+
+
 
 
 
