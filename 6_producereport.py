@@ -207,6 +207,7 @@ ProduceDictionary={
     }
 }
 
+#my code
 for produce in ProduceDictionary:
    total = round(ProduceDictionary[produce]["amt_sold"] * ProduceDictionary[produce]["cost"],2)
    if total != ProduceDictionary[produce]["total"]:
