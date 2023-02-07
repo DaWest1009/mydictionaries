@@ -23,3 +23,45 @@ Longitude: -92.2981
 Latitude: 14.7628
 '''
 import json
+
+infile = open('eq_data.json', 'r')
+eqData = json.load(infile)
+earthquakes = eqData['features']
+
+#Part 1 print out the number of earthquakes
+print()
+print(f"Number of earthquakes: {len(earthquakes)}")
+print('\n')
+
+#Part 2 iterate through the dictionary and extract data, and save it in a new dictionary
+eq_dict =  {"Earthquakes": []}
+   
+
+for eq in earthquakes:
+   location = eq['properties']['place']
+   magnitude = eq['properties']['mag']
+   latitude = eq['geometry']['coordinates'][1]
+   longitude = eq['geometry']['coordinates'][0]
+   if magnitude > 6:
+      eq_list = [location, magnitude, longitude, latitude]
+      eq_dict["Earthquakes"].append(eq_list)
+
+#Part 3 using the eq_dict dictionary, print out the information
+for record in eq_dict["Earthquakes"]:
+   print("Location: ", record[0], '\n', 
+   "Magnitude: ", record[1], '\n', 
+   "Longitude: ", record[2], '\n',
+   "Latitude: ", record[3], '\n', sep='')
+
+
+
+
+
+
+   
+   
+
+   
+
+
+   
