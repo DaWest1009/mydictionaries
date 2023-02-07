@@ -28,7 +28,6 @@ infile = open('eq_data.json', 'r')
 eqData = json.load(infile)
 
 #Part 1 print out the number of earthquakes
-
 print('\n', "Number of earthquakes: ", len(eqData['features']) ,'\n', sep='')
 
 #Part 2 iterate through the dictionary and extract data, and save it in a new dictionary
