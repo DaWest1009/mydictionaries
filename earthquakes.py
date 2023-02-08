@@ -47,9 +47,9 @@ for eq in eqData['features']:
 print("New Dictionary: ", '\n', eq_dict, '\n')
 
 #Part 3 using the eq_dict dictionary, print out the information
-for keys in eq_dict:
-   print("Location: ", eq_dict[keys]["Loc"], "\nMagnitude: ", eq_dict[keys]["Mag"], 
-   "\nLongitude: ", eq_dict[keys]["Lon"], "\nLatitude: ", eq_dict[keys]["Lat"], sep='')
+for eq in eq_dict:
+   print("Location: ", eq_dict[eq]["Loc"], "\nMagnitude: ", eq_dict[eq]["Mag"], 
+   "\nLongitude: ", eq_dict[eq]["Lon"], "\nLatitude: ", eq_dict[eq]["Lat"], sep='')
 
 
 
